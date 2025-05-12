@@ -1,5 +1,5 @@
 import { ExecutionContext } from '@nestjs/common';
-import { AdminGuard } from 'libs/ms-common/src';
+import { AdminGuard } from 'src/guards/admin-guard/admin.guard';
 
 describe('AdminGuard', () => {
   let mockRequest: { user?: { userRole: string } } = {};

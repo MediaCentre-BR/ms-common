@@ -1,5 +1,5 @@
 import { ExecutionContext } from '@nestjs/common';
-import { IdentityRequiredGuard } from 'libs/ms-common/src/guards/identity-required/identity-required.guard';
+import { IdentityRequiredGuard } from 'src/guards/identity-required/identity-required.guard';
 
 describe('[ IdentityRequiredGuard ]', () => {
   let request: any = {
