@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "ms-common": {
+      "type": "library",
+      "root": "libs/ms-common",
+      "entryFile": "index",
+      "sourceRoot": "libs/ms-common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/ms-common/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

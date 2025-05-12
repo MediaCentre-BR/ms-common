@@ -1,0 +1,10 @@
+{
+  "spec_dir": "test",
+  "spec_files": ["**/*[sS]pec.ts"],
+  "helpers": ["src/spec/helpers/reporter.ts"],
+  "env": {
+    "stopSpecOnExpectationFailure": false,
+    "random": true,
+    "forbidDuplicateNames": true
+  }
+}
