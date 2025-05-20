@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserRequestIdentifierMiddleware = void 0;
 const common_1 = require("@nestjs/common");
-const request_user_types_1 = require("../../utils/request-user.types");
+const request_user_types_1 = require("../../types/request-user.types");
 let UserRequestIdentifierMiddleware = class UserRequestIdentifierMiddleware {
     _VALID_USER_ROLES = Object.values(request_user_types_1.ValidUserRoles);
     use(req, res, next) {

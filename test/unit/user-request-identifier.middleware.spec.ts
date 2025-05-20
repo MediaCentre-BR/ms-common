@@ -1,7 +1,7 @@
 import { Request } from 'express';
 import { Response } from 'express-serve-static-core';
 import { UserRequestIdentifierMiddleware } from 'src/middlewares/user-request-identifier/user-request-identifier.middleware';
-import { RequestUser, ValidUserRoles } from 'src/utils/request-user.types';
+import { RequestUser, ValidUserRoles } from 'src/types/request-user.types';
 
 describe('[ UserRequestIdentifierMiddleware ]', () => {
   let mockRequest: Partial<Request & { user?: RequestUser }>;

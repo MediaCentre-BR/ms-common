@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AdminGuard = AdminGuard;
 const common_1 = require("@nestjs/common");
-const request_user_types_1 = require("../../utils/request-user.types");
+const request_user_types_1 = require("../../types/request-user.types");
 function AdminGuard(allowedRoles = [
     request_user_types_1.ValidUserRoles.ADMIN,
     request_user_types_1.ValidUserRoles.SUPER_ADMIN,

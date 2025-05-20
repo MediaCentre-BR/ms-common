@@ -7,7 +7,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { ExceptionResponse } from '../../utils/exception-response.types';
+import { ExceptionResponse } from '../../types/exception-response.types';
 
 /**
  * A filter that handles exceptions thrown in the application and transforms them into appropriate HTTP responses.

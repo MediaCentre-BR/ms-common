@@ -6,7 +6,7 @@ import {
 } from '@nestjs/common';
 import { Request } from 'express';
 import { Observable } from 'rxjs';
-import { RequestUser, ValidUserRoles } from '../../utils/request-user.types';
+import { RequestUser, ValidUserRoles } from '../../types/request-user.types';
 
 export function AdminGuard(
   allowedRoles: ValidUserRoles[] = [

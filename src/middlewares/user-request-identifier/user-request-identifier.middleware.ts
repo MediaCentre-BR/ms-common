@@ -1,6 +1,6 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { ValidUserRoles } from '../../utils/request-user.types';
+import { ValidUserRoles } from '../../types/request-user.types';
 
 @Injectable()
 export class UserRequestIdentifierMiddleware implements NestMiddleware {
