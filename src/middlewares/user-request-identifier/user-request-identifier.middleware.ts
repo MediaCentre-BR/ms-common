@@ -23,6 +23,12 @@ export class UserRequestIdentifierMiddleware implements NestMiddleware {
         userAccountId: accountId ? (accountId as string) : null,
         isAccountAdmin: isAccountAdmin ? isAccountAdmin === 'true' : null,
       };
+
+      const targetVendor = req.query.targetVendor as string | undefined;
+
+      if (userRole === ValidUserRoles.SUPER_ADMIN && targetVendor) {
+        req['user'].targetVendor = targetVendor;
+      }
     }
 
     next();
