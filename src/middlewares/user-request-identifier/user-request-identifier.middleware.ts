@@ -27,7 +27,7 @@ export class UserRequestIdentifierMiddleware implements NestMiddleware {
       const targetVendor = req.query.targetVendor as string | undefined;
 
       if (userRole === ValidUserRoles.SUPER_ADMIN && targetVendor) {
-        req['user'].targetVendor = targetVendor;
+        req['user'].cover = targetVendor;
       }
     }
 

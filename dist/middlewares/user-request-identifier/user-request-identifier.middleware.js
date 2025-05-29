@@ -27,7 +27,7 @@ let UserRequestIdentifierMiddleware = class UserRequestIdentifierMiddleware {
             };
             const targetVendor = req.query.targetVendor;
             if (userRole === request_user_types_1.ValidUserRoles.SUPER_ADMIN && targetVendor) {
-                req['user'].targetVendor = targetVendor;
+                req['user'].cover = targetVendor;
             }
         }
         next();
