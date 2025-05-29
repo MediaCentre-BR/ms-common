@@ -25,6 +25,10 @@ let UserRequestIdentifierMiddleware = class UserRequestIdentifierMiddleware {
                 userAccountId: accountId ? accountId : null,
                 isAccountAdmin: isAccountAdmin ? isAccountAdmin === 'true' : null,
             };
+            const targetVendor = req.query.targetVendor;
+            if (userRole === request_user_types_1.ValidUserRoles.SUPER_ADMIN && targetVendor) {
+                req['user'].targetVendor = targetVendor;
+            }
         }
         next();
     }
